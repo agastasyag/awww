@@ -107,8 +107,9 @@ heartTrigger.addEventListener('click', () => {
     gsap.to(heartTrigger, {scale: 1.4, duration: 0.1, yoyo: true, repeat: 1});
     
     if (heartClicks === 5) {
-        alert("Okay, you really love clicking hearts! Here's a virtual hug! 🤗");
+        alert("Awww, you really love clicking hearts! Here's a virtual hug! 🤗");
         confetti({ particleCount: 50, spread: 100, origin: { y: 1 } });
         heartClicks = 0;
     }
+
 });
